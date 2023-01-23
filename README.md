@@ -1,0 +1,5 @@
+# multinational-retail-data-centralisation
+This was a scenario where I work for a multinational company that sells various goods across the globe. However the sales data was spread across various data sources which makes it hard to analyse and even access. My job was to make the sales data accessible from one centralised location.
+My first milestone was to extract all the data from the multitude of data sources which included AWS databases in the cloud, PDF documents stores in an AWS S3 bucket, usage of API endpoints, CSV formats in an s3 bucket  and JSON files. 
+Once I had extrated the data through the codes i have uploaded here, I had to clean them of null and errogenous values before i could upload it onto the database within PgAdmin. Once uploaded i had then casted the columns of all the tables to the correct datatype and created primary keys for the dimension tables so my main table for orders can act as the single source of truth.
+This finalised the star based schema and allowed for me to query the data. 
